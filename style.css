@@ -119,25 +119,58 @@ ul {
   background: #666;
   height: 400px;
 }
+/* ————————————————————————————以下是内容2———————————————————————————— */
+.content2 {
+  border: 1px solid red;
+  width: 1000px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+/* ————————————————————————————分割线———————————————————————————— */
 
 .category {
   border: 1px solid red;
   display: flex;
-  height: 50px;
-  width: 800px;
   align-items: center;
+  height: 50px;
+  width: 1000px;
 }
-.category > div {
+.category > .left {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 1600px;
+  background-color: #fff;
+}
+.category > .middle {
+  width: 20px;
+}
+.category > .right {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 500px;
+  background-color: #fff;
+}
+.left > div {
   margin-left: 20px;
+  color: #006093;
+  font-weight: bold;
 }
+.left > .category1 {
+  border-top: 3px solid #01a6ff;
+}
+/* ————————————————————————————分割线———————————————————————————— */
 
 .images {
   border: 1px solid green;
   display: flex;
   justify-content: flex-start;
+  background-color: #fff;
   width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .images > .x {
@@ -145,22 +178,115 @@ ul {
   flex-wrap: wrap;
   margin-right: -12px;
 }
-
 .image {
+  border: 1px solid gray;
+  background: #fff;
+  font-size: 10px;
+}
+.image > img {
   width: 230px;
   height: 173px;
-  background: grey;
   border: 1px solid red;
-  margin-right: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
   margin-bottom: 10px;
 }
-.images > aside {
-  border: 1px solid red;
-  background: #666;
-  width: 200px;
-}
+
+/* ————————————————————————————分割线———————————————————————————— */
 .aside {
-  border: 1px solid red;
+  background: #666;
+  border: 1px solid pink;
   display: flex;
-  width: 200px;
+  flex-direction: column;
+  background-color: #fff;
+  width: 198px;
+  align-items: center;
+  /* flex-wrap: wrap; */
+}
+.aside > .asideImg {
+  border: 1px solid red;
+  /* width: 198px; */
+  width: 90%;
+  /* height: 51px; */
+  margin: 1vh 0;
+}
+.aside2 {
+  border: 1px solid green;
+  /* width: 198px; */
+  /* height: 50px; */
+  flex: 0.2;
+  width: 90%;
+}
+.aside2div {
+  border: 1px solid blue;
+  display: flex;
+}
+
+.aside2div > span {
+  border: 1px solid red;
+  flex: 0.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside2div .aside2span {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside2div .aside2span .span1 {
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.aside2div .aside2span .span2 {
+  font-size: 3px;
+  padding-left: 2em;
+}
+
+.asidetext {
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+  width: 90%;
+}
+.asidetext > * {
+  /* border: 1px solid red; */
+}
+.asidetext .asidetext1 {
+}
+.asidetext .asidetext1 .asideText1Span {
+  color: red;
+  font-weight: 800;
+}
+.asidetext .asidetext1 .asideText1Span2 {
+  font-size: 12px;
+}
+
+/* ————————————————————————————分割线———————————————————————————— */
+.footer {
+  border: 1px solid green;
+  display: flex;
+  justify-content: flex-start;
+  width: 1000px;
+  height: 280px;
+  flex-wrap: wrap;
+}
+.footer > .footer1 {
+  background-color: #00a2ff;
+  width: 1000px;
+  height: 40px;
+}
+.footer > .footer2 {
+  background-color: #23272a;
+  width: 1000px;
+  height: 200px;
+}
+.footer > .footer3 {
+  background-color: #202125;
+  width: 1000px;
+  height: 40px;
 }
